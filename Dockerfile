@@ -18,6 +18,6 @@ RUN unzip /app/pocketbase/pocketbase.zip -d /app/pocketbase && \
     chmod +x /app/pocketbase/pocketbase && \
     rm /app/pocketbase/pocketbase.zip
 
-EXPOSE 8090
+EXPOSE 8080
 
 CMD [ "/app/pocketbase/pocketbase", "serve", "--http=0.0.0.0:8090", "--dir=/app/data/pb_data", "--publicDir=/app/data/pb_public" ]
