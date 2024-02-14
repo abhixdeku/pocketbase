@@ -20,4 +20,4 @@ RUN unzip /app/pocketbase/pocketbase.zip -d /app/pocketbase && \
 
 EXPOSE 8080
 
-CMD [ "/app/pocketbase/pocketbase", "serve", "--http=0.0.0.0:8090", "--dir=/app/data/pb_data", "--publicDir=/app/data/pb_public" ]
+CMD [ "/app/pocketbase/pocketbase", "serve", "--http=0.0.0.0:8080", "--dir=/app/data/pb_data", "--publicDir=/app/data/pb_public" ]
